@@ -8,9 +8,10 @@ Licensed ${PACKAGE.license}
 ${PACKAGE.homepage}`;
 
 module.exports = {
+  mode: 'development',
   context: __dirname,
   entry: {
-    circletype: './src/entry.js'
+    circletype: './src/entry.js',
   },
 
   module: {
@@ -21,7 +22,7 @@ module.exports = {
         use: [
           'babel-loader',
           'eslint-loader',
-        ]
+        ],
       },
     ],
   },
@@ -33,6 +34,6 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.BannerPlugin(banner)
+    new webpack.BannerPlugin(banner),
   ],
 };
