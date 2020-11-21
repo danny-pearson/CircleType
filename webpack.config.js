@@ -8,7 +8,6 @@ Licensed ${PACKAGE.license}
 ${PACKAGE.homepage}`;
 
 module.exports = {
-  mode: 'production',
   context: __dirname,
   entry: {
     circletype: './src/entry.js'
